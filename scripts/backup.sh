@@ -1,7 +1,4 @@
-#!/usr/bin/env bash
-# --------------------------------------------------------------------
-# backup.sh : Simple backup script for Day 1
-# --------------------------------------------------------------------
+
 set -euo pipefail
 IFS=$'\n\t'
 
@@ -14,4 +11,4 @@ ARCHIVE="${DEST_DIR}/backup_${TIMESTAMP}.tar.gz"
 mkdir -p "$DEST_DIR"
 tar -czf "$ARCHIVE" -C "$SRC_DIR" .
 
-echo "✅ Backup saved to $ARCHIVE"
+echo "Backup saved to $ARCHIVE"
